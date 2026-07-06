@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">ローコスト住宅のイメージ</title>
+  <desc id="desc">朝の光の中に建つ温かな木の家と価格を表すシンプルな札。</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="0.58" stop-color="#f8d9a9"/>
+      <stop offset="1" stop-color="#d9a071"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d69a58"/>
+      <stop offset="1" stop-color="#8b5f3c"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#sky)"/>
+  <circle cx="720" cy="130" r="96" fill="#ffd59b" opacity=".72"/>
+  <path d="M0 455c180-42 286-32 448 4s310 48 512-4v145H0z" fill="#f0dcc1"/>
+  <path d="M230 316 480 146l250 170v202H230z" fill="#f7ecd8"/>
+  <path d="M194 320 480 126l286 194-30 42-256-172-256 172z" fill="#8b5f3c"/>
+  <rect x="290" y="350" width="380" height="168" rx="10" fill="url(#wood)"/>
+  <rect x="438" y="404" width="84" height="114" rx="6" fill="#fff3d7"/>
+  <path d="M322 386h82M556 386h82M322 434h82M556 434h82" stroke="#fff1d6" stroke-width="18" stroke-linecap="round" opacity=".84"/>
+  <g transform="translate(646 342)">
+    <rect width="164" height="92" rx="18" fill="#fffaf0" opacity=".92"/>
+    <path d="M28 46h108" stroke="#8b5f3c" stroke-width="8" stroke-linecap="round"/>
+    <path d="M48 26v40M78 26v40M108 26v40" stroke="#f2a557" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

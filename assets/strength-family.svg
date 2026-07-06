@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">家族の未来を包み込む空間のイメージ</title>
+  <desc id="desc">柔らかな光に包まれたリビングと家族の時間を想起させる住まい。</desc>
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset=".55" stop-color="#f8e1bd"/>
+      <stop offset="1" stop-color="#d9ad7c"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#room)"/>
+  <path d="M150 500h660V210L480 104 150 210z" fill="#fff8e8" opacity=".82"/>
+  <path d="M118 218 480 78l362 140" fill="none" stroke="#8b5f3c" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="302" y="260" width="356" height="176" rx="22" fill="#f7ecd8"/>
+  <rect x="346" y="292" width="268" height="92" rx="12" fill="#ffd59b" opacity=".54"/>
+  <path d="M322 436h316" stroke="#8b5f3c" stroke-width="18" stroke-linecap="round" opacity=".22"/>
+  <g fill="#8b5f3c" opacity=".92">
+    <circle cx="400" cy="350" r="28"/>
+    <circle cx="480" cy="334" r="34"/>
+    <circle cx="562" cy="354" r="24"/>
+  </g>
+  <path d="M356 424c18-48 66-70 124-70s106 22 124 70" fill="none" stroke="#8b5f3c" stroke-width="26" stroke-linecap="round" opacity=".76"/>
+  <circle cx="480" cy="248" r="82" fill="#fffaf0" opacity=".72"/>
+  <circle cx="480" cy="248" r="48" fill="#f2a557" opacity=".55"/>
+  <path d="M0 516c140-24 220-16 350 8 158 30 304 36 610-22v98H0z" fill="#fffaf0" opacity=".62"/>
+</svg>

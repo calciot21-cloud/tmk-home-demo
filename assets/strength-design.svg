@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">デザイン住宅のイメージ</title>
+  <desc id="desc">シンプルな外観、木目、光の入る窓を組み合わせたデザイン住宅。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset=".62" stop-color="#f7ecd8"/>
+      <stop offset="1" stop-color="#e8d0ad"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8e8"/>
+      <stop offset="1" stop-color="#f2a557"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#bg)"/>
+  <path d="M120 478c172-60 342-72 514-28 102 26 186 30 326 0v150H120z" fill="#fff4df"/>
+  <rect x="226" y="244" width="508" height="266" rx="8" fill="#fffaf0"/>
+  <path d="M210 244h540L690 166H286z" fill="#4f3727"/>
+  <rect x="286" y="300" width="150" height="210" fill="#c88a4a"/>
+  <path d="M316 300v210M350 300v210M386 300v210M420 300v210" stroke="#8b5f3c" stroke-width="4" opacity=".32"/>
+  <rect x="482" y="300" width="178" height="118" rx="6" fill="url(#glass)"/>
+  <path d="M482 359h178M571 300v118" stroke="#fffaf0" stroke-width="8" opacity=".7"/>
+  <rect x="482" y="442" width="178" height="68" rx="6" fill="#f7ecd8"/>
+  <path d="M186 510h598" stroke="#8b5f3c" stroke-width="14" stroke-linecap="round" opacity=".22"/>
+  <circle cx="750" cy="156" r="78" fill="#ffd59b" opacity=".56"/>
+</svg>

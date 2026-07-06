@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TMK home | 横スクロールデモ</title>
+  <meta name="description" content="TMK homeのトップページ横スクロールデモです。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="horizontal.css">
+</head>
+<body class="horizontal-page">
+  <header class="site-header">
+    <a class="header-logo" href="#top" aria-label="TMK home トップへ">
+      <img src="logo2-clean.png" alt="TMK home">
+    </a>
+    <nav class="header-nav" aria-label="メインナビゲーション">
+      <a class="nav-button" href="#strengths">強み</a>
+      <a class="nav-button" href="#services">サービス</a>
+      <a class="nav-button" href="#area">対応エリア</a>
+      <a class="nav-button" href="#contact">無料相談する</a>
+    </nav>
+  </header>
+
+  <main class="horizontal-scroll" id="top">
+    <div class="horizontal-sticky">
+      <div class="horizontal-track">
+        <section class="horizontal-panel hero" data-panel="top">
+          <div class="hero-bg" aria-hidden="true"></div>
+          <img src="logo.png" alt="" class="hero-watermark" aria-hidden="true">
+          <div class="hero-inner reveal">
+            <p class="eyebrow">Low cost, good design, warm life.</p>
+            <h1>家づくりに、<br>希望の光を。</h1>
+            <p class="hero-copy">ローコストで、デザイン性抜群の住まいを。</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#contact">無料相談する</a>
+              <a class="button secondary" href="#strengths">施工イメージを見る</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="horizontal-panel intro" data-panel="intro">
+          <div class="section-inner narrow reveal">
+            <p class="section-kicker">TMK home</p>
+            <h2>手の届く価格で、家族らしい美しさを。</h2>
+            <p>木の温もり、朝の柔らかな光、帰ってくるたびにほっとする空気感。TMK homeは、費用を抑えながらも住まいの心地よさとデザインを大切にします。</p>
+          </div>
+        </section>
+
+        <section class="horizontal-panel strengths" id="strengths" data-panel="strengths">
+          <div class="section-inner">
+            <div class="section-heading reveal">
+              <p class="section-kicker">Strength</p>
+              <h2>TMK homeの強み</h2>
+            </div>
+          </div>
+          <div class="strength-slider reveal" aria-label="TMK homeの強みスライド">
+            <div class="strength-track">
+              <article class="strength-slide is-active">
+                <img src="assets/strength-lowcost.svg" alt="ローコストでも妥協しない家づくりのイメージ">
+                <div class="strength-copy">
+                  <span class="feature-number">01</span>
+                  <h3>ローコストでも妥協しない</h3>
+                  <p>予算の不安に寄り添いながら、暮らしやすさと見た目の心地よさを両立します。</p>
+                </div>
+              </article>
+              <article class="strength-slide">
+                <img src="assets/strength-design.svg" alt="デザイン性の高い住まいのイメージ">
+                <div class="strength-copy">
+                  <span class="feature-number">02</span>
+                  <h3>デザイン性の高い住まい</h3>
+                  <p>シンプルで永く愛せる外観と、光や素材感を活かした内装をご提案します。</p>
+                </div>
+              </article>
+              <article class="strength-slide">
+                <img src="assets/strength-family.svg" alt="家族の未来を包み込む空間のイメージ">
+                <div class="strength-copy">
+                  <span class="feature-number">03</span>
+                  <h3>家族の未来を包み込む空間</h3>
+                  <p>今の暮らしだけでなく、これからの家族の変化まで見据えた住まいを形にします。</p>
+                </div>
+              </article>
+            </div>
+            <div class="slider-controls" aria-label="スライド操作">
+              <button class="slider-arrow" type="button" data-slide-direction="-1" aria-label="前の強みを見る">‹</button>
+              <div class="slider-dots" aria-label="スライド選択">
+                <button class="is-active" type="button" data-slide-index="0" aria-label="1枚目を表示"></button>
+                <button type="button" data-slide-index="1" aria-label="2枚目を表示"></button>
+                <button type="button" data-slide-index="2" aria-label="3枚目を表示"></button>
+              </div>
+              <button class="slider-arrow" type="button" data-slide-direction="1" aria-label="次の強みを見る">›</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="horizontal-panel services" id="services" data-panel="services">
+          <div class="section-inner split">
+            <div class="section-heading reveal">
+              <p class="section-kicker">Service</p>
+              <h2>暮らしに合わせて選べる家づくり</h2>
+              <p>はじめての相談から具体的な住まいの計画まで、安心して進められるよう丁寧にサポートします。</p>
+            </div>
+            <div class="service-list">
+              <article class="service-item reveal">
+                <div class="service-icon">新</div>
+                <div>
+                  <h3>新築住宅</h3>
+                  <p>家族構成や土地条件に合わせた、無理のない新築計画。</p>
+                </div>
+              </article>
+              <article class="service-item reveal">
+                <div class="service-icon">設</div>
+                <div>
+                  <h3>デザイン住宅</h3>
+                  <p>木目、光、余白を活かした、親しみやすく洗練された住まい。</p>
+                </div>
+              </article>
+              <article class="service-item reveal">
+                <div class="service-icon">相</div>
+                <div>
+                  <h3>住宅相談</h3>
+                  <p>費用、間取り、エリア、進め方まで、最初の一歩から相談できます。</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="horizontal-panel area" id="area" data-panel="area">
+          <div class="section-inner area-inner reveal">
+            <div>
+              <p class="section-kicker">Area</p>
+              <h2>対応エリア</h2>
+              <p>地域の暮らし方や気候に寄り添い、家族が安心して過ごせる住まいづくりをお手伝いします。</p>
+            </div>
+            <div class="area-tags" aria-label="対応エリア一覧">
+              <span>南東北</span>
+              <span>三重県近郊</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="horizontal-panel contact" id="contact" data-panel="contact">
+          <div class="contact-inner reveal">
+            <p class="section-kicker">Contact</p>
+            <h2>まずは理想の暮らしを聞かせてください</h2>
+            <p>予算のこと、デザインのこと、土地や間取りのこと。まだ具体的でなくても大丈夫です。</p>
+            <a class="button primary" href="mailto:info@example.com">無料相談する</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="horizontal.js"></script>
+</body>
+</html>
