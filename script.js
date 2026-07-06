@@ -38,6 +38,7 @@ function showSlide(index) {
 
 function startAutoSlide() {
   window.clearInterval(slideTimer);
+  if (window.matchMedia("(max-width: 520px)").matches) return;
   slideTimer = window.setInterval(() => {
     showSlide(currentSlide + 1);
   }, slideInterval);

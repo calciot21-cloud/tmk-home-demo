@@ -1150,6 +1150,57 @@ h3 {
     line-height: 1.75;
   }
 
+  .strength-slider {
+    overflow: visible;
+    padding: 0 20px 24px;
+    background: var(--ivory);
+  }
+
+  .strength-track {
+    display: grid;
+    gap: 16px;
+    min-height: 0;
+  }
+
+  .strength-slide,
+  .strength-slide.is-active {
+    position: relative;
+    inset: auto;
+    display: block;
+    min-height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    border: 1px solid rgba(139, 95, 60, 0.14);
+    border-radius: 8px;
+    box-shadow: 0 12px 28px rgba(79, 55, 39, 0.1);
+  }
+
+  .strength-slide .strength-layer {
+    display: none;
+  }
+
+  .strength-slide .layer-right {
+    position: relative;
+    inset: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1720 / 914;
+    object-fit: contain;
+    clip-path: none;
+    opacity: 1;
+    filter: none;
+    transform: none;
+    animation: none;
+  }
+
+  .slider-controls {
+    display: none;
+  }
+
   .cinematic-hero {
     min-height: 520px;
     height: 88svh;
