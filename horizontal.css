@@ -23,10 +23,58 @@
 }
 
 .horizontal-panel {
+  position: relative;
   flex: 0 0 100vw;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.horizontal-panel::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: auto;
+  max-width: none;
+  aspect-ratio: auto;
+  content: "";
+  background:
+    linear-gradient(90deg, rgba(45, 29, 18, 0.42), rgba(45, 29, 18, 0.1) 58%, rgba(45, 29, 18, 0.22)),
+    linear-gradient(180deg, rgba(255, 244, 224, 0.12), rgba(61, 38, 22, 0.2));
+  border-radius: 0;
+  pointer-events: none;
+}
+
+.horizontal-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.horizontal-panel.hero {
+  background-image: url("horizontal-bg-1.png");
+}
+
+.horizontal-panel.intro {
+  background-image: url("horizontal-bg-2.png");
+}
+
+.horizontal-panel.strengths {
+  background-image: url("horizontal-bg-3.png");
+}
+
+.horizontal-panel.services {
+  background-image: url("horizontal-bg-4.png");
+}
+
+.horizontal-panel.area {
+  background-image: url("horizontal-bg-5.png");
+}
+
+.horizontal-panel.contact {
+  background-image: url("horizontal-bg-6.png");
 }
 
 .horizontal-panel:not(.hero) {
@@ -39,6 +87,39 @@
   min-height: 100vh;
 }
 
+.horizontal-panel.hero .hero-bg {
+  display: none;
+}
+
+.horizontal-panel.hero .hero-watermark {
+  opacity: 0.1;
+}
+
+.horizontal-panel.hero .hero-inner,
+.horizontal-panel.intro .section-inner,
+.horizontal-panel.services .section-heading,
+.horizontal-panel.area .area-inner,
+.horizontal-panel.contact .contact-inner {
+  padding: clamp(26px, 4vw, 46px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(255, 248, 236, 0.38));
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  border-radius: 8px;
+  box-shadow:
+    0 22px 50px rgba(45, 29, 18, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.94),
+    inset 0 -3px 5px rgba(139, 95, 60, 0.1);
+  backdrop-filter: blur(16px) saturate(120%);
+}
+
+.horizontal-panel.hero .hero-inner {
+  margin-left: clamp(20px, 6vw, 84px);
+}
+
+.horizontal-panel.intro .section-inner {
+  margin-left: clamp(20px, 7vw, 110px);
+  margin-right: auto;
+}
+
 .horizontal-panel.strengths {
   display: block;
   padding-top: clamp(78px, 10vh, 110px);
@@ -46,11 +127,19 @@
 
 .horizontal-panel.strengths .section-heading {
   margin-bottom: 18px;
+  color: var(--white);
+  text-shadow: 0 2px 18px rgba(45, 29, 18, 0.38);
 }
 
 .horizontal-panel .strength-slider {
+  width: min(58vw, 900px);
   height: calc(100vh - clamp(190px, 24vh, 240px));
   min-height: 430px;
+  margin-left: auto;
+  margin-right: clamp(20px, 5vw, 72px);
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 8px;
+  box-shadow: 0 22px 50px rgba(45, 29, 18, 0.22);
 }
 
 .horizontal-panel .strength-track {
@@ -62,6 +151,27 @@
 .horizontal-panel.area,
 .horizontal-panel.contact {
   min-height: 100vh;
+}
+
+.horizontal-panel.services .section-inner {
+  align-items: center;
+}
+
+.horizontal-panel.services .section-heading {
+  margin-bottom: 0;
+}
+
+.horizontal-panel.services .service-item {
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(14px);
+}
+
+.horizontal-panel.area .area-inner {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.72), rgba(255, 248, 236, 0.4));
+}
+
+.horizontal-panel.contact {
+  color: var(--ink);
 }
 
 .horizontal-progress {
@@ -119,7 +229,14 @@
   }
 
   .horizontal-panel .strength-slider {
+    width: auto;
     height: auto;
     min-height: 620px;
+    margin-inline: 20px;
+  }
+
+  .horizontal-panel.hero .hero-inner,
+  .horizontal-panel.intro .section-inner {
+    margin-inline: 20px;
   }
 }
