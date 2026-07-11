@@ -798,9 +798,21 @@
     display: block;
   }
 
+  .horizontal-panel.intro {
+    display: grid;
+    align-items: center;
+    min-height: 760px;
+    padding: 118px 20px 108px;
+    overflow: hidden;
+  }
+
   .horizontal-panel.intro .section-inner {
-    top: 68%;
-    width: min(92vw, 520px);
+    position: relative;
+    top: auto;
+    left: auto;
+    width: min(88vw, 520px);
+    margin: 0 auto;
+    transform: none;
   }
 
   .horizontal-panel.intro .section-kicker {
@@ -809,13 +821,15 @@
   }
 
   .horizontal-panel.intro h2 {
-    margin-bottom: 20px;
-    font-size: clamp(24px, 6.6vw, 34px);
+    margin-bottom: 26px;
+    font-size: clamp(34px, 10vw, 48px);
+    line-height: 1.48;
+    white-space: normal;
   }
 
   .horizontal-panel.intro .section-inner > p:last-child {
-    font-size: 15px;
-    line-height: 1.9;
+    font-size: 16px;
+    line-height: 2.05;
   }
 
   .horizontal-panel.hero .hero-inner {
@@ -927,5 +941,26 @@
 
   .horizontal-strength-item h3 {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 520px) {
+  .horizontal-panel.intro {
+    min-height: 820px;
+    padding-top: 124px;
+    padding-bottom: 118px;
+  }
+
+  .horizontal-panel.intro .section-inner {
+    width: min(86vw, 380px);
+  }
+
+  .horizontal-panel.intro h2 {
+    font-size: clamp(32px, 11vw, 44px);
+  }
+
+  .horizontal-panel.intro .section-inner > p:last-child {
+    font-size: 15px;
+    line-height: 2;
   }
 }
