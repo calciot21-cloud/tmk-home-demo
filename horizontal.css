@@ -328,10 +328,16 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  backdrop-filter: none;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+.horizontal-panel.area .area-inner::before,
+.horizontal-panel.area .area-inner::after {
+  display: none !important;
+  content: none !important;
 }
 
 .horizontal-panel.area .section-kicker,
@@ -368,22 +374,24 @@
 }
 
 .horizontal-panel.area .area-tags {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(2, minmax(260px, 1fr));
   gap: clamp(72px, 10vw, 150px);
   align-items: start;
   width: min(900px, 100%);
   margin: clamp(34px, 5vh, 64px) auto 0;
+  transform: none !important;
 }
 
 .horizontal-panel.area .area-map-card {
-  display: grid;
+  display: grid !important;
   justify-items: center;
   gap: 16px;
   min-width: 0;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 .horizontal-panel.area .area-tags span {
@@ -394,6 +402,7 @@
 .horizontal-panel.area .area-map {
   width: min(270px, 100%);
   height: auto;
+  max-width: 100%;
   overflow: visible;
   filter: drop-shadow(0 18px 34px rgba(66, 45, 32, 0.16));
 }
